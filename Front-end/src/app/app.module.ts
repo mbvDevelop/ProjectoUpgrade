@@ -11,7 +11,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { FooterComponent } from './core/components/footer/footer.component';
 import { HeaderComponent } from './core/components/header/header.component';
 import { RegistroComponent } from './pages/registro/registro.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LibraryComponent } from './pages/library/library.component';
 import {HttpClientModule} from '@angular/common/http'
 
@@ -36,8 +36,9 @@ export function playerFactory() {
     AppRoutingModule,
     FontAwesomeModule,
     FormsModule,
+    ReactiveFormsModule,
     LottieModule.forRoot({ player: playerFactory }),
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

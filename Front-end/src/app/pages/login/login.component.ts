@@ -1,11 +1,16 @@
 import { Component, OnInit } from '@angular/core';
-import { LoginI } from '../../shared/models/login.interface';
+
 import { ResponseI } from '../../shared/models/response.interface';
 import { ApiService } from 'src/app/servicios/api/api.service';
+import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
-
-import { NgModule } from '@angular/core';
+import {
+  FormControl,
+  FormGroup,
+  Validators,
+  FormBuilder,
+} from '@angular/forms';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-login',
@@ -13,24 +18,26 @@ import { NgModule } from '@angular/core';
   styleUrls: ['./login.component.scss'],
 })
 export class LoginComponent implements OnInit {
-  loginForm = new FormGroup({
-    email: new FormControl('', Validators.required),
-    password: new FormControl('', Validators.required),
-  });
+  login = {
+    email: '',
+    password: ''
+  }
 
-
-
-  constructor(private api: ApiService, private router: Router) {}
+  constructor(
+    private api: ApiService,
+    private router: Router,
+    private http: HttpClient
+  ) {}
 
   ngOnInit(): void {}
 
-  onLogin(form: LoginI) {
-    this.api.loginByEmail(form).subscribe((data) => {
-      let dataResponse: ResponseI = data;
-      if (dataResponse.status == 'ok') {
-        localStorage.setItem('token', dataResponse.result.token);
-        this.router.navigate(['Registro']);
-      }
+  onLogin() {
+    console.log(this.login);
+    this.api.sinsin(this.login).subscribe((res: any) => {
+      console.log(res);
+      localStorage.setItem('token', res);
+
+      this.router.navigate(['HomeUser']);
     });
   }
 }

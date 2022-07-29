@@ -14,5 +14,4 @@ export class AppComponent {
   faInstagram = faInstagram;
   faTwitter = faTwitter;
   faGooglePlus = faGooglePlus
-  
 }
