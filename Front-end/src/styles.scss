@@ -9,3 +9,44 @@ html {
   width: 100%;
   margin: 0;
 }
+
+$color_1: #10102c;
+$color_2: white;
+$color_3: rgb(0, 0, 0);
+$color_4: transparent;
+$color_5: grey;
+$color_6: rgb(129, 114, 212);
+$font-family_1: "circular";
+$font-family_2: "Rubik";
+$background-color_1: #ffffff;
+$background-color_2: rgb(15, 15, 15);
+$background-color_3: white;
+
+.main-button {
+  background-image: linear-gradient(
+    to right,
+    #6363d3 0%,
+    #1e287c 51%,
+    #5454ee 100%
+  );
+  text-align: center;
+  font-family: $font-family_2;
+  transition: 0.5s;
+  border-radius: 35px !important;
+  background-size: 200% auto;
+  color: $color_2;
+  display: block;
+  cursor: pointer;
+  border-bottom: 5px solid rgb(148, 138, 243);
+  border-right: 5px solid rgb(148, 138, 243);
+  border-left: 5px solid rgb(148, 138, 243);
+  border-top: 5px solid rgb(148, 138, 243);
+  &:hover {
+    background-position: right center;
+    color: $color_4;
+    text-decoration: none;
+  }
+  a {
+    color: $color_4;
+  }
+}
