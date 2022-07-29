@@ -80,9 +80,9 @@ const login = async (req, res) => {
         },
     })
     // Si existe comprobar contraseñas con bcrypt
-    if (!user) return res.status(400).send(statusCode[400]);
+    if (!user) return res.status(400).send();
     const validPass = await bcrypt.compare(req.body.password, user.password);
-    if (!validPass) return res.status(400).send(statusCode[400]);
+    if (!validPass) return res.status(400).send();
     // Generar token de acceso con el id del usuario
     const token = jwt.sign({ _id: user.id }, process.env.TOKEN_SALT);
     // Enviar el token de acceso
