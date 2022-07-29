@@ -45,17 +45,18 @@ $background-color_3: white;
 /* section 1 */
 .s1 {
   width: 100%;
-  height: 70vh;
+  height: 75vh;
+  margin-top: 130px;
   background-color: $background-color_1;
   background: linear-gradient(180deg, #ffffff 0%, #acaecc48 100%, #ffffff 100%);
   display: flex;
   justify-content: space-between;
 }
 .btn1 {
-  width: 160px;
-  height: 50px;
+  text-decoration: none;
   p {
-    font-size: 16px;
+    font-size: 17px;
+    margin-top: 9%;
   }
 }
 .s1_content {
@@ -90,15 +91,14 @@ $background-color_3: white;
   border: none;
   top: 670px;
   right: 120px;
-  display: flex;
-  justify-content: center;
-  p {
-    margin-top: 6.5%;
-  }
+  position: absolute;
+  width: 190px;
+  height: 10px;
+  text-decoration: none;
 }
 .slider {
   width: 35%;
-  height: 70vh;
+  height: 75vh;
   overflow: hidden;
   background-color: $background-color_2;
   ul {
@@ -108,7 +108,6 @@ $background-color_3: white;
     animation: cambio 30s infinite normal ease-in-out;
     color: $color_2;
     font-family: $font-family_1;
-    text-align: center;
   }
   li {
     width: 100%;
@@ -116,12 +115,12 @@ $background-color_3: white;
     list-style: none;
   }
   h5 {
-    font-size: 25px;
+    font-size: 35px;
     margin-top: 10%;
   }
   p {
     font-size: 17px;
-    margin-top: 3em;
+    margin-top: 13em;
   }
 }
 
@@ -140,7 +139,7 @@ $background-color_3: white;
   }
 }
 .s2_content {
-  margin-top: 7%;
+  margin-top: 6%;
   margin-left: 8%;
   width: 600px;
   h2 {
@@ -148,7 +147,7 @@ $background-color_3: white;
     text-shadow: 3px 12px 16px #9796998a;
     font-weight: 300;
     font-family: $font-family_1;
-    margin-bottom: 7%;
+    margin-bottom: 5%;
   }
   p {
     font-size: 18px;
