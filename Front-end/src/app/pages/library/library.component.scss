@@ -1,0 +1,77 @@
+$font-family_2: "Rubik";
+$color_4: white;
+$color_5: grey;
+
+.buscador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  #buscador {
+    width: 30%;
+    padding: 16px 22px;
+    font-size: 1.25rem;
+    border-radius: 8px;
+    border: 2px solid #000;
+    transition: background-color 0.25s;
+  }
+
+  #buscador:focus {
+    background-color: rgb(148, 138, 243);
+  }
+}
+
+.container {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  background-image: url(../../../assets/img/library.PNG);
+  background-position: 58% 55%;
+  background-size: 500px;
+  filter: opacity(0.3);
+  background-repeat: no-repeat;
+}
+.info {
+  width: 40%;
+  height: 100%;
+  background-color: rgb(182, 161, 231);
+  border-radius: 15px;
+  opacity: 0.8;
+}
+
+.main-button {
+  background-image: linear-gradient(
+    to right,
+    #6363d3 0%,
+    #1e287c 51%,
+    #5454ee 100%
+  );
+  text-align: center;
+  font-family: $font-family_2;
+  transition: 0.5s;
+  border-radius: 35px !important;
+  background-size: 200% auto;
+  color: $color_4;
+  display: block;
+  cursor: pointer;
+  border-bottom: 5px solid rgb(148, 138, 243);
+  border-right: 5px solid rgb(148, 138, 243);
+  border-left: 5px solid rgb(148, 138, 243);
+  border-top: 5px solid rgb(148, 138, 243);
+  &:hover {
+    background-position: right center;
+    color: $color_5;
+    text-decoration: none;
+  }
+  a {
+    color: $color_4;
+  }
+}

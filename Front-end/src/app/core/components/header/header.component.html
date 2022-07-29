@@ -1,0 +1,62 @@
+<div class="root-header">
+  <link
+    href="//db.onlinewebfonts.com/c/f3def4d2879393a37e87d5074c746e79?family=Steinbeck"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <header>
+    <a class="logo" href="#">
+      <img
+        class="logo_picture"
+        src="../assets/img/unnamed.png"
+        alt="Logotipo"
+      />
+    </a>
+
+    <!-- menu desk -->
+    <ul class="menu_desk" id="menu_desk">
+      <li>
+        <a class="desk" href="#Oku_menu">¿Por qué Oku?</a>
+      </li>
+      <li>
+        <a class="desk" href="#Funciones_menu">Funciones</a>
+      </li>
+      <li>
+        <a class="desk" href="#Ventajas_menu">Ventajas</a>
+      </li>
+    </ul>
+    <!-- menu desk -->
+    <div class="box_buttons">
+      <button id="log-in" class="log-in">
+        <a routerLink="/Login" class="log-in_text">
+          <p>Log-in</p>
+        </a>
+      </button>
+      <button id="register" class="main-button aline">
+        <a routerLink="/Registro" class="register_text">
+          <p>Comenzar</p>
+        </a>
+        <i>
+          <fa-icon [icon]="faArrowRight"></fa-icon>
+        </i>
+      </button>
+    </div>
+    <!-- Menu movil -->
+    <!-- Hamburger icon -->
+    <input class="side-menu" type="checkbox" id="side-menu" />
+    <label class="hamb" for="side-menu">
+      <span class="hamb-line"></span>
+    </label>
+    <!-- Menu -->
+    <nav class="menu_mob">
+      <ul class="mob">
+        <li><a class="desk" href="#Oku_menu">¿Por qué Oku?</a></li>
+        <li><a class="desk" href="#Funciones_menu ">Funciones</a></li>
+        <li><a class="desk" href="#Ventajas_menu">Ventajas</a></li>
+        <li><a class="desk colored" routerLink="/Registro">Comenzar</a></li>
+        <li><a class="desk colored" routerLink="/Login">Login</a></li>
+      </ul>
+    </nav>
+    <!-- Menu movil -->
+  </header>
+</div>

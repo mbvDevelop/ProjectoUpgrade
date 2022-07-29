@@ -1,0 +1,33 @@
+<section class="search-bar">
+  <div class="buscador">
+    <form class="form" action="">
+      <input
+        id="buscador"
+        type="search"
+        value=""
+        placeholder="Busca tu archivo..."
+      />
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </form>
+  </div>
+  <div class="profile-picture">
+    <img alt="" class="img_profile click" />
+    <style>
+      .img_profile {
+        background-image: url("images/<?= $foto ?>");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    </style>
+  </div>
+</section>
+<section class="container">
+  <div class="info"></div>
+</section>
+
+<div class="logout">
+  <button class="main-button">
+    <a href="logout.php"> Logout </a>
+  </button>
+</div>

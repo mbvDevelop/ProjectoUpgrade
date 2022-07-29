@@ -1,0 +1,227 @@
+/* section 1 */
+$font-family_2: "Rubik";
+$color_4: white;
+$color_5: grey;
+
+.s1 {
+  width: 100%;
+  height: 34em;
+  background-color: rgb(248, 248, 248);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  font-family: var(--circular);
+  width: 375px;
+  height: 600px;
+  border-radius: 10px;
+  margin: 1em;
+  background-color: #ffff;
+  padding: 2% 3%;
+  box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.subtitle {
+  text-align: center;
+  font-weight: bold;
+  font-size: 13px;
+  margin-top: 5%;
+}
+
+.subtitle a {
+  margin-top: 1em;
+  text-decoration: underline;
+}
+
+.or {
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 2px solid rgb(245 239 239);
+  line-height: 0.1em;
+  margin: 25px 0;
+  margin-top: 3em;
+}
+
+.or span {
+  background: #fff;
+  padding: 0 10px;
+}
+
+.subtitle {
+  font-size: 16px;
+}
+.subtitle a {
+  color: rgb(122, 70, 172);
+}
+
+.email-login {
+  display: flex;
+  flex-direction: column;
+}
+
+.email-login label {
+  color: rgb(170 166 166);
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 15px 30px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: rgb(229, 229, 233);
+}
+
+.forget-pass {
+  color: purple;
+  text-decoration: underline;
+  display: flex;
+  justify-content: center;
+}
+
+.main-button {
+  background-image: linear-gradient(
+    to right,
+    #6363d3 0%,
+    #1e287c 51%,
+    #5454ee 100%
+  );
+  width: 125px;
+  height: 42px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 25%;
+  font-size: 16px;
+  text-align: center;
+  font-family: $font-family_2;
+  transition: 0.5s;
+  border-radius: 35px !important;
+  background-size: 200% auto;
+  color: $color_4;
+  display: block;
+  cursor: pointer;
+  border-bottom: 5px solid rgb(148, 138, 243);
+  border-right: 5px solid rgb(148, 138, 243);
+  border-left: 5px solid rgb(148, 138, 243);
+  border-top: 5px solid rgb(148, 138, 243);
+  &:hover {
+    background-position: right center;
+    color: $color_5;
+    text-decoration: none;
+  }
+  a {
+    color: $color_4;
+  }
+}
+
+.logueo {
+  width: 135px;
+  height: 42px;
+  font-size: 16px;
+}
+
+@media all and (min-width: 599px) and (max-width: 768px) {
+  .s1 {
+    height: 33em;
+  }
+  .subtitle {
+    font-size: 18px;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 900px) {
+  .card {
+    width: 50%;
+  }
+  .subtitle {
+    font-size: 20px;
+  }
+  .forget-pass {
+    text-align: center;
+  }
+}
+
+@media all and (min-width: 901px) and (max-width: 1199px) {
+  .card {
+    width: 500px;
+  }
+  .main-button {
+    width: 130px;
+    height: 44px;
+  }
+
+  .title {
+    font-size: 35px;
+  }
+
+  .subtitle {
+    font-size: 26px;
+  }
+
+  .subtitle a {
+    font-size: 26px;
+  }
+
+  .or span {
+    background: #fff;
+    padding: 0 20px;
+  }
+  .forget-pass {
+    text-align: center;
+  }
+}
+
+@media all and (min-width: 1200px) and (max-width: 1919px) {
+  .card {
+    width: 500px;
+  }
+
+  .title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+  }
+
+  .subtitle {
+    text-align: center;
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 5%;
+  }
+
+  .subtitle a {
+    margin-top: 1em;
+    text-decoration: underline;
+  }
+
+  .or {
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 2px solid rgb(245 239 239);
+    line-height: 0.1em;
+    margin: 25px 0;
+    margin-top: 3em;
+  }
+
+  .or span {
+    background: #fff;
+    padding: 0 10px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+  .subtitle a {
+    color: rgb(122, 70, 172);
+  }
+}
