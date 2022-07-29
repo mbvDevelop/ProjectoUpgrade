@@ -1,46 +1,18 @@
 /* section 1 */
 .s1 {
-  width: 100%;
-  height: 90vh;
+  width: 78%;
+  height: 85vh;
   display: flex;
   background-color: rgb(248, 248, 248);
-  /* background-color: rgb(245, 245, 252); */
-}
-
-.card-register {
-  width: 60%;
-  background-color: #eeeef0;
-  height: 87vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .card-img {
-  width: 40%;
-  height: 90vh;
-  background-color: #ffffff;
-  border-radius: 5px;
-}
-
-.card-img img {
-  width: 60%;
-  margin-left: 25%;
-  margin-top: 23%;
-}
-
-.card-img h1 {
-  font-family: var(--circular);
-  margin-top: 70%;
-  font-size: 60px;
-  color: #10102c;
-  margin-left: 10%;
-  text-shadow: 0px 4px 10px #5e5a64;
+  display: none;
 }
 
 .form {
   font-family: var(--circular);
-  width: 600px;
+  width: 60%;
   height: 640px;
   border-radius: 15px;
   background-color: #ffff;
@@ -52,13 +24,13 @@
 .title {
   text-align: center;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .subtitle {
   text-align: center;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 14px;
   margin-top: 2%;
 }
 
@@ -118,166 +90,15 @@ input[type="password"],
   font-family: sans-serif;
   color: #aaa;
 }
+
 .choose_image {
-  margin-top: 5%;
+  margin: 5%;
   display: flex;
+  flex-wrap: wrap;
   font-size: 14.5px;
 }
 
-/* Responsive */
-
-/* Responsive  */
-
-@media all and (min-width: 1200px) and (max-width: 1919px) {
-  .s1 {
-    height: 90vh;
-  }
-  .card-img {
-    height: 90vh;
-  }
-  .card-register {
-    height: 90vh;
-  }
-  .email-login label {
-    margin-top: 1%;
-  }
-  .form {
-    width: 500px;
-    height: 550px;
-  }
-  .cta-btn {
-    width: 145px;
-    height: 45px;
-    margin-top: 7%;
-  }
-}
-@media all and (min-width: 960px) and (max-width: 1199px) {
-  .s1 {
-    height: 50vh;
-    overflow: hidden;
-  }
-  .card-img {
-    height: 50vh;
-  }
-  .card-img img {
-    width: 83%;
-    margin-left: 8%;
-    margin-top: 36%;
-  }
-
-  .card-register {
-    height: 50vh;
-  }
-  .email-login label {
-    margin-top: 1%;
-  }
-  .form {
-    width: 450px;
-    height: 550px;
-  }
-  .cta-btn {
-    width: 130px;
-    height: 45px;
-    margin-top: 7%;
-  }
-  .choose_image {
-    font-size: 13px;
-  }
-}
-
-@media all and (min-width: 768px) and (max-width: 958px) {
-  .card-img img {
-    width: 85%;
-    margin-left: 10%;
-    margin-top: 52%;
-  }
-  .card-register {
-    width: 55%;
-    height: 60vh;
-  }
-  .form {
-    width: 350px;
-    height: 550px;
-    margin-left: 0%;
-    padding: 6% 9%;
-  }
-  .s1 {
-    height: 60vh;
-  }
-  .card-img {
-    width: 45%;
-    height: 60vh;
-  }
-  .title {
-    font-size: 25px;
-  }
-  .subtitle {
-    font-size: 13px;
-    margin-top: 5%;
-  }
-  .cta-btn {
-    width: 135px;
-    height: 40px;
-    margin-left: 25%;
-    margin-top: 18%;
-    font-size: 15px;
-  }
-  .choose_image {
-    font-size: 14px;
-  }
-  .choose_image input {
-    width: 27%;
-    margin-left: 9%;
-  }
-}
-
-@media all and (min-width: 599px) and (max-width: 768px) {
-  .card-img img {
-    width: 85%;
-    margin-left: 10%;
-    margin-top: 52%;
-  }
-  .card-register {
-    width: 55%;
-    height: 60vh;
-  }
-  .form {
-    width: 330px;
-    height: 530px;
-    margin-left: 0%;
-    padding: 6% 9%;
-  }
-  .s1 {
-    height: 60vh;
-  }
-  .card-img {
-    width: 45%;
-    height: 60vh;
-  }
-  .title {
-    font-size: 25px;
-  }
-  .subtitle {
-    font-size: 13px;
-    margin-top: 5%;
-  }
-  .cta-btn {
-    width: 135px;
-    height: 40px;
-    margin-left: 24%;
-    margin-top: 18%;
-    font-size: 15px;
-  }
-  .choose_image {
-    font-size: 14px;
-  }
-  .choose_image input {
-    width: 27%;
-    margin-left: 7%;
-  }
-}
-
-@media all and (max-width: 479px) {
+@media all and (min-width: 479px) and (max-width: 599px) {
   .card-img {
     width: 100%;
     height: 35vh;
@@ -298,6 +119,28 @@ input[type="password"],
     margin-top: 2%;
     padding: 6% 9%;
   }
+  // .card-img img {
+  // .card-register {
+  //   width: 90%;
+  //   background-color: #eeeef0;
+  //   height: 87vh;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  // }
+  //   width: 60%;
+  //   margin-left: 25%;
+  //   margin-top: 23%;
+  // }
+
+  // .card-img h1 {
+  //   font-family: var(--circular);
+  //   margin-top: 70%;
+  //   font-size: 60px;
+  //   color: #10102c;
+  //   margin-left: 10%;
+  //   text-shadow: 0px 4px 10px #5e5a64;
+  // }
   .s1 {
     height: 105vh;
     display: block;
@@ -324,9 +167,164 @@ input[type="password"],
     margin-left: 7%;
   }
 }
+/* Responsive */
 
 /* Responsive  */
-// @media all and (min-width: 479px)and (max-width: 599px) {
+
+// @media all and (min-width: 1200px) and (max-width: 1919px) {
+//   .s1 {
+//     height: 90vh;
+//   }
+//   .card-img {
+//   width: 40%;
+//   height: 90vh;
+//   background-color: #ffffff;
+//   border-radius: 5px;
+// }
+//   .card-register {
+//     height: 90vh;
+//   }
+//   .email-login label {
+//     margin-top: 1%;
+//   }
+//   .form {
+//     width: 500px;
+//     height: 550px;
+//   }
+//   .cta-btn {
+//     width: 145px;
+//     height: 45px;
+//     margin-top: 7%;
+//   }
+// }
+
+// @media all and (min-width: 960px) and (max-width: 1199px) {
+//   .s1 {
+//     height: 50vh;
+//     overflow: hidden;
+//   }
+//   .card-img {
+//     height: 50vh;
+//   }
+//   .card-img img {
+//     width: 83%;
+//     margin-left: 8%;
+//     margin-top: 36%;
+//   }
+
+//   .card-register {
+//     height: 50vh;
+//   }
+//   .email-login label {
+//     margin-top: 1%;
+//   }
+//   .form {
+//     width: 450px;
+//     height: 550px;
+//   }
+//   .cta-btn {
+//     width: 130px;
+//     height: 45px;
+//     margin-top: 7%;
+//   }
+//   .choose_image {
+//     font-size: 13px;
+//   }
+// }
+
+// @media all and (min-width: 768px) and (max-width: 958px) {
+//   .card-img img {
+//     width: 85%;
+//     margin-left: 10%;
+//     margin-top: 52%;
+//   }
+//   .card-register {
+//     width: 55%;
+//     height: 60vh;
+//   }
+//   .form {
+//     width: 350px;
+//     height: 550px;
+//     margin-left: 0%;
+//     padding: 6% 9%;
+//   }
+//   .s1 {
+//     height: 60vh;
+//   }
+//   .card-img {
+//     width: 45%;
+//     height: 60vh;
+//   }
+//   .title {
+//     font-size: 25px;
+//   }
+//   .subtitle {
+//     font-size: 13px;
+//     margin-top: 5%;
+//   }
+//   .cta-btn {
+//     width: 135px;
+//     height: 40px;
+//     margin-left: 25%;
+//     margin-top: 18%;
+//     font-size: 15px;
+//   }
+//   .choose_image {
+//     font-size: 14px;
+//   }
+//   .choose_image input {
+//     width: 27%;
+//     margin-left: 9%;
+//   }
+// }
+
+// @media all and (min-width: 599px) and (max-width: 768px) {
+//   .card-img img {
+//     width: 85%;
+//     margin-left: 10%;
+//     margin-top: 52%;
+//   }
+//   .card-register {
+//     width: 55%;
+//     height: 60vh;
+//   }
+//   .form {
+//     width: 330px;
+//     height: 530px;
+//     margin-left: 0%;
+//     padding: 6% 9%;
+//   }
+//   .s1 {
+//     height: 60vh;
+//   }
+//   .card-img {
+//     width: 45%;
+//     height: 60vh;
+//   }
+//   .title {
+//     font-size: 25px;
+//   }
+//   .subtitle {
+//     font-size: 13px;
+//     margin-top: 5%;
+//   }
+//   .cta-btn {
+//     width: 135px;
+//     height: 40px;
+//     margin-left: 24%;
+//     margin-top: 18%;
+//     font-size: 15px;
+//   }
+//   .choose_image {
+//     font-size: 14px;
+//   }
+//   .choose_image input {
+//     width: 27%;
+//     margin-left: 7%;
+//   }
+// }
+
+/* Responsive  */
 // @media all and (min-width: 599px) and (max-width: 768px) {
 // @media all and (min-width: 768px) and (max-width: 958px) {
 // }
