@@ -12,12 +12,12 @@ export class ApiService {
   constructor(private http: HttpClient) {}
 
   sinsin(user: any) {
-    return this.http.post('${this.url}login', user, { responseType: 'text' });
+    return this.http.post(`${this.url}login`, user, { responseType: 'text' });
   }
 
 
 
   posrtUser(user: User) {
-    return this.http.post('${this.url}register', user,{ responseType: 'text' });
+    return this.http.post(`${this.url}register`, user,{ responseType: 'text' });
   }
 }

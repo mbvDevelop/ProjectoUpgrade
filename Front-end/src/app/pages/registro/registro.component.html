@@ -1,77 +1,43 @@
 <section class="s1">
   <div class="card-img">
-    <img src="../../assets/img/diapoo.PNG" alt="" />
+    <img src="../../assets/img/diapoo.PNG" alt="">
   </div>
   <div class="card-register">
-    <form
-      #formUsuario="ngForm"
-      class="form"
-      action="/register"
-      method="POST"
-      enctype="multipart/form-data"
-    >
-      <h2 class="title">Registro</h2>
-      <p class="subtitle">
-        Ya tienes cuenta? <a routerLink="/Login"> Log in</a>
-      </p>
+    <form class="form" #signUpForm="ngForm" (ngSubmit)="signUpForm.valid && onSubmit(signUpForm)"
+      enctype="multipart/form-data">
+      <h2 class="title"> Registro</h2>
+      <p class="subtitle">Ya tienes cuenta? <a routerLink="/Login"> Log in</a></p>
       <p class="or"><span>o</span></p>
       <div class="email-login">
+
         <label for="Name"> <b>Nombre</b></label>
 
-        <input
-          #inputNombre="ngModel"
-          type="text"
-          maxlength="15"
-          pattern="([a-zA-z]{3,30}\s*)+"
-          [(ngModel)]="nuevoUsuario.nombre"
-          placeholder="Name"
-          name="name"
-          required
-        />
-        <span [hidden]="inputNombre.valid">Formato Incorrecto</span>
+        <input #inputName="ngModel" type="text" maxlength="15" pattern="([a-zA-z]{3,30}\s*)+"
+          [(ngModel)]="selectUser.name" placeholder="Name" name="name" required>
+        <span [hidden]="inputName.valid">Formato Incorrecto</span>
 
         <label for="email"> <b>Email</b></label>
-        <input
-          #inputCorreo="ngModel"
-          type="email"
-          placeholder=" Email"
-          pattern="^[^@]+@[^@]+\.[a-zA-z]{2,}$"
-          [(ngModel)]="nuevoUsuario.correo"
-          name="email"
-          required
-        />
+        <input #inputCorreo="ngModel" type="email" placeholder=" Email" pattern="^[^@]+@[^@]+\.[a-zA-z]{2,}$"
+          [(ngModel)]="selectUser.email" name="email" required>
         <span [hidden]="inputCorreo.valid">Formato Incorrecto</span>
 
         <label for="psw"><b>Contraseña</b></label>
-        <input
-          #inputPasword="ngModel"
-          type="password"
-          placeholder="Contraseña"
-          ppattern="^(?=\w\d)(?=\w[A-Z])(?=\w*[a-z])\S{8,16}$"
-          [(ngModel)]="nuevoUsuario.contraseya"
-          name="password"
-          required
-        />
+        <input #inputPasword="ngModel" type="password" placeholder="Contraseña"
+          ppattern="^(?=\w\d)(?=\w[A-Z])(?=\w*[a-z])\S{8,16}$" [(ngModel)]="selectUser.password" name="password"
+          required>
         <span [hidden]="inputPasword.valid">Formato Incorrecto</span>
         <div class="choose_image">
           <span> Elige una foto de perfil</span>
-          <input
-            id="imagen"
-      
-            name="imagen"
-            size="30"
-            type="file"
-          />
+          <input id="imagen" name="imagen" size="30" type="file" />
         </div>
-        <button
-          class="main-button cta-btn"
-          type="submit"
-          value="Submit"
-          [disabled]="!formUsuario.valid"
-        >
-          Enviar
-        </button>
+        <button class="main-button cta-btn " type="submit" value="Submit" [disabled]="!signUpForm.valid">Enviar</button>
       </div>
     </form>
+    <div class="success" *ngIf="showSuccessMessage">
+      Saved Register form Successfully
+    </div>
+    <div class="alert" *ngIf="serverErrorMessage">
+      {{serverErrorMessage}}
+    </div>
   </div>
 </section>
