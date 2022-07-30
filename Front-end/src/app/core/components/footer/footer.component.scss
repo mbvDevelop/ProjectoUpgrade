@@ -1,5 +1,5 @@
 footer {
-  height: 130px;
+  height: 160px;
   background-color: #f2f0fa;
   padding:0rem;
   display: flex;
@@ -22,6 +22,7 @@ footer {
 .legal {
   width: 30%;
   height:100%;
+  margin-top:3%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,8 +37,8 @@ footer {
 }
 
 .social_media i{
-  font-size: 25px;
-  padding: 6px;
+  font-size: 27px;
+  padding: 7px;
 }
 .social_media {
   width: 30%;
@@ -47,7 +48,7 @@ footer {
 }
 .social_media a {
   margin-left: 4%;
-  padding: 8px;
+  padding: 12px;
   border-radius: 50%;
   color: #3d3363;
   background-color: rgb(218, 218, 238);
@@ -88,9 +89,10 @@ footer {
   }
   .legal{
       width: 100%;
+      margin-right:30%;
   }
   .legal a{
-      font-size: 11px;
+      font-size: 8px;
   }
   .logo_footer img {
       display: none;
@@ -98,6 +100,9 @@ footer {
   .social_media {
       width: 50%;
       margin-left: 0%;
+  }
+  .social_media i{
+    font-size:15px;
   }
   .social_media a{
       width:25px;

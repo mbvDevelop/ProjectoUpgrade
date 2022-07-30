@@ -946,7 +946,7 @@ $background-color_3: white;
 @media all and (max-width: 479px) {
 
 	.s1 {
-		height: 70vh;
+		height: 75vh;
 		margin-top: 10vh;
 	}
 	.s1_content {
@@ -971,8 +971,8 @@ $background-color_3: white;
 		}
 	}
 	.btn-s1 {
-		top: 610px;
-		right: 130px;
+		top: 600px;
+		right: 70px;
 	}
 	.btn1 {
 		width: 141px;
@@ -986,13 +986,13 @@ $background-color_3: white;
 		display: none;
 	}
 	.s2 {
-		height: 84vh;
+		height: 98vh;
 		padding: 7% 0%;
 		display: block;
 		img {
 			width: 320px;
 			height: 300px;
-			margin-left: 17%;
+			margin-left: 13%;
 		}
 	}
 	.s2_content {
@@ -1013,32 +1013,30 @@ $background-color_3: white;
 	}
 	.s3 {
 		padding: 10% 5%;
-		height: 95vh;
+		height: 125vh;
 		h4 {
-			font-size: 36px;
+			font-size: 33px;
 			margin-bottom: 8%;
 			text-align: center;
 		}
 	}
 	.s3_content {
 		display: block;
-		text-align: center;
 	}
 	.cont1 {
 		padding: 0%;
-		lottie-player {
-			margin-left: 38%;
+
+		ng-lottie {
+      margin-left:20%;
 		}
 		p {
-			margin-top: 0%;
+			margin-top: 10%;
 			font-size: 17px;
 			padding: 6%;
 		}
 	}
 	.cont2 {
 		lottie-player {
-			margin-left: 40%;
-			margin-top: 8%;
 		}
 		padding: 0%;
 		p {
@@ -1048,9 +1046,9 @@ $background-color_3: white;
 		}
 	}
 	.s4 {
-		height: 121vh;
+		height: 122vh;
 	}
-	.s6_content {
+	.s4_content {
 		h2 {
 			margin-top: 10%;
 			font-size: 35px;
@@ -1101,22 +1099,16 @@ $background-color_3: white;
 	}
 	.free-oku {
 		width: 85%;
-		height: 80px;
-		top: -60px;
+		height: 60px;
+		top: -30px;
 		p {
-			font-size: 15px;
-			padding-left: 10%;
-			margin-left: 1%;
+			font-size: 13px;
+			padding-left: 2%;
+			margin-left: 0%;
 		}
 	}
 	.btn4 {
-		width: 180px;
-		height: 30px;
-		margin-right: 7%;
-		p {
-			font-size: 10px;
-			margin-right: 10%;
-		}
+		display:none;
 	}
 	.slider2 {
 		margin-top: 11%;
