@@ -28,7 +28,7 @@
         <span [hidden]="inputPasword.valid">Formato Incorrecto</span>
         <div class="choose_image">
           <span> Elige una foto de perfil</span>
-          <input id="imagen" name="imagen" size="30" type="file" />
+          <input (change)="onFileChanged($event)" id="file" name="file" size="30" type="file" />
         </div>
         <button class="main-button cta-btn " type="submit" value="Submit" [disabled]="!signUpForm.valid">Enviar</button>
       </div>

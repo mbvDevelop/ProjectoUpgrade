@@ -7,7 +7,7 @@ const multer = require('multer');
 let config = multer.diskStorage({
   destination: function (req, file, cb) {
     // Configurar la url de desino de los archivos temporales
-    cb(null, 'C:/Users/isa/Documents/Upgrade/login-proyecto-final/temp')
+    cb(null, 'C:/Users/isa/Documents/Upgrade/ProjectUpgrade/Back-end/temp')
   },
   filename: function (req, file, cb) {
     // Cambiar el nombre del archivo a "file-<fecha actual>.<extension de archivo>"

@@ -6,7 +6,7 @@ const { uploadFile, searchFiles, listAllFiles, deleteFile } = require('../contro
 // config de multer 
 let config = multer.diskStorage({
   destination: function (req, file, cb) {
-    cb(null, 'C:/Users/isa/Documents/Upgrade/login-proyecto-final/temp')
+    cb(null, 'C:/Users/isa/Documents/Upgrade/ProjectUpgrade/Back-end/temp')
   },
   filename: function (req, file, cb) {
     cb(null, file.originalname);

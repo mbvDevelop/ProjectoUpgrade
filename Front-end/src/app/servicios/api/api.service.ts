@@ -15,9 +15,13 @@ export class ApiService {
     return this.http.post(`${this.url}login`, user, { responseType: 'text' });
   }
 
-
-
   posrtUser(user: User) {
     return this.http.post(`${this.url}register`, user,{ responseType: 'text' });
+  }
+
+  getUser(token: string) {
+    const headers= new HttpHeaders()
+  .set('token', token)
+    return this.http.get(this.url, {'headers': headers})
   }
 }

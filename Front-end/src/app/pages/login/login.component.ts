@@ -36,7 +36,6 @@ export class LoginComponent implements OnInit {
     this.api.sinsin(this.login).subscribe((res: any) => {
       console.log(res);
       localStorage.setItem('token', res);
-
       this.router.navigate(['HomeUser']);
     });
   }
