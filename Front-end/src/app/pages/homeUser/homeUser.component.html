@@ -1,70 +1,23 @@
-<section class="search-bar">
-  <div class="buscador">
-    <form action="">
-      <input
-        id="buscador"
-        type="search"
-        value=""
-        placeholder="Busca tu archivo..."
-      />
-      <i class="search"></i>
-    </form>
+<section class="container">
+  <div class="info">
+        <p class="tlt">
+            Bienvenido a tu perfil
+        </p>
   </div>
-  <div class="profile-picture">
-    <img alt="" class="img_profile click" />
-    <style>
-      .img_profile {
-        background-image: url("images/<?= $foto ?>");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-      }
-    </style>
+  <div class="redirection">
+      <button class="main-button size"> 
+          <a href="library.php">
+          Let´s go
+          </a>
+      </button>
+  </div>
+  <div class="video">
+      <iframe width="500" height="255" src="https://www.youtube.com/embed/n1nbEuSFC9E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="500" height="255" src="https://www.youtube.com/embed/Ud1rdaeXENM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
 </section>
 
-<section class="container">
-  <div class="info">
-    <!-- <?php if(!empty($user)): ?> -->
-    <p class="tlt">
-      Bienvenido a tu perfil
-      <!-- <?= $user['name']; ?> -->
-    </p>
-    <!-- <?php endif; ?> -->
-  </div>
-  <div class="redirection">
-    <button class="main-button size">
-      <a href="http://localhost:4200/Library"> Let´s go </a>
-    </button>
-  </div>
-  <div class="video">
-    <iframe
-      class="video-frame"
-      width="400"
-      height="255"
-      src="https://www.youtube.com/embed/n1nbEuSFC9E"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
-    ></iframe>
-    <iframe
-      class="video-frame"
-      width="400"
-      height="255"
-      src="https://www.youtube.com/embed/Ud1rdaeXENM"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
-    ></iframe>
-  </div>
-</section>
 
 <div class="logout main-button size">
   <a href="http://localhost:4200/"> Logout </a>
 </div>
-<!-- scripts js
-<script src="js/jquery3.js"></script>
-<script src="js/main.js"></script>
-<script src="js/Notifications.js"></script> -->
