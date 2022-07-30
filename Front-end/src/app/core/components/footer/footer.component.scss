@@ -1,3 +1,6 @@
+p {
+  margin: 0;
+}
 
 footer {
   height: 80px;
@@ -5,7 +8,6 @@ footer {
   padding: 0.5em;
   display: flex;
   align-items: center;
-  justify-content: space-around;
 }
 
 .logo_footer img {
@@ -13,15 +15,15 @@ footer {
 }
 .footer_content {
   width: 80%;
-  height: 70px;
+  height: 67px;
   margin-top: 3%;
   text-align: center;
   display: flex;
+  justify-content: space-around;
 }
 .legal {
   width: 100%;
   height: 75%;
-  margin-left: 15%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,27 +31,20 @@ footer {
 .legal a {
   font-family: "Rubik";
   font-size: 12px;
-  text-decoration: none;
-  color: black;
   margin-right: 5%;
-}
-
-.social_media i{
-  font-size: 25px;
-  padding: 10px;
+  font-weight: 500;
 }
 .social_media {
-  width: 80%;
-  height: 40%;
-  margin-left: 35%;
-  display: flex;
+  width: 40%;
 }
 .social_media a {
-  font-size: 30px;
-  margin-left: 4%;
-  border-radius: 50%;
+  font-size: 23px;
+  margin-left: 10%;
+  width: 60px;
+  height: 40px;
   color: #3d3363;
   background-color: rgb(218, 218, 238);
+  border-radius: 50%;
   transition: all 0.5s;
 }
 
@@ -62,6 +57,7 @@ footer {
     margin-left: 15px;
   }
 }
+
 @media (min-width: 600px) and (max-width: 1024px) {
   footer {
     width: 100%;
@@ -82,9 +78,13 @@ footer {
   }
   .legal a {
     font-size: 16px;
-
+    font-weight: 500;
   }
+
   .social_media {
     width: 30%;
+  }
+  .social_media a {
+    font-size: 50px;
   }
 }
