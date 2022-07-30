@@ -1,5 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 // estilos
+$color_2: white;
+$color_4: transparent;
+$font-family_2: "Rubik";
+$color_2: rgb(173, 170, 170);
+$color_4: white;
+$font-family_2: "circular";
+
 * {
   box-sizing: border-box;
 }
@@ -24,4 +31,32 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.main-button {
+  background-image: linear-gradient(
+    to right,
+    #6363d3 0%,
+    #1e287c 51%,
+    #5454ee 100%
+  );
+  text-align: center;
+  font-family: $font-family_2;
+  transition: 0.5s;
+  border-radius: 35px !important;
+  background-size: 200% auto;
+  color: $color_2;
+  display: block;
+  cursor: pointer;
+  border-bottom: 5px solid rgb(148, 138, 243);
+  border-right: 5px solid rgb(148, 138, 243);
+  border-left: 5px solid rgb(148, 138, 243);
+  border-top: 5px solid rgb(148, 138, 243);
+  &:hover {
+    background-position: right center;
+    color: $color_4;
+    text-decoration: none;
+  }
+  a {
+    color: $color_4;
+  }
 }
